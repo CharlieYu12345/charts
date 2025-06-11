@@ -82,16 +82,16 @@ tolerations: []
 affinity: {}
 
 # Add custom volume and mount
-extraVolumeMounts:
-  - name: bingo-tls-certs
-    mountPath: /certs
-    readOnly: true
+extraVolumeMounts: {}
+  # - name: bingo-tls-certs
+  #   mountPath: /certs
+  #   readOnly: true
 
-extraVolumes:
-  - name: bingo-tls-certs
-    secret:
-      secretName: bingo-tls-certs
+extraVolumes: {}
+  # - name: bingo-tls-certs
+  #   secret:
+  #     secretName: bingo-tls-certs
 
-extraArgs:
-  - --cert=/certs/tls.crt
-  - --key=/certs/tls.key
+extraArgs: {}
+  # - --cert=/certs/tls.crt
+  # - --key=/certs/tls.key
